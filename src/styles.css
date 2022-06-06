@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap");
 
+:root {
+  --arctic-white: #e7e6eb;
+  --phosphor-green: rgb(5, 92, 5);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,87 +12,41 @@
   font-family: "Poppins", sans-serif;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  background-color: black;
+body {
+  background: url("./assets/home-page-images/homepage.png") center top fixed
+    no-repeat;
 }
 
-nav a {
-  color: rgb(213, 213, 213);
-  text-decoration: none;
+.title-slide {
+  width: 100%;
+  height: 92vh;
+  color: var(--arctic-white);
+  position: relative;
 }
 
-nav a:hover {
-  color: white;
+.title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.logo {
-  font-size: 1.4rem;
+.title h1 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  font-weight: 600;
+  min-width: 400px;
+  line-height: 1.2;
+  padding-bottom: 30px;
 }
 
-.nav-links {
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
-  font-size: 0.8rem;
-}
-
-.nav-links a {
-  letter-spacing: 2px;
+.title h2 {
   font-weight: 400;
+  font-size: 1.2rem;
 }
 
-.nav-links li {
-  list-style: none;
-}
-
-.burger div {
-  width: 25px;
-  height: 2px;
-  background-color: rgb(213, 213, 213);
-  margin: 5px;
-}
-
-.burger {
-  display: none;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1024px) {
-  .nav-links {
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  body {
-    overflow-x: hidden;
-  }
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-
-  .burger {
-    display: block;
-  }
-}
-
-.nav-active {
-  transform: translateX(0%);
+.content {
+  height: 100vh;
+  background-color: var(--arctic-white);
 }

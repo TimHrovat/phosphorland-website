@@ -1,0 +1,129 @@
+.NavbarItems {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.NavbarItems .active {
+  background-color: black;
+}
+
+.navbar-logo {
+  color: var(--arctic-white);
+  justify-self: start;
+  margin-left: 20px;
+  width: 200px;
+  font-weight: 500;
+  position: fixed;
+  left: 5vw;
+}
+
+.navbar-logo:hover {
+  filter: brightness(1.5);
+  transition: all 0.3s ease-out;
+}
+
+a {
+  text-decoration: none;
+  color: var(--arctic-white);
+}
+
+.nav-menu {
+  position: fixed;
+  right: 6vw;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 30px;
+  list-style: none;
+  text-align: center;
+  justify-content: end;
+}
+
+.nav-links {
+  padding: 0.5rem 1rem;
+  font-weight: 400;
+}
+
+.nav-links:hover {
+  filter: brightness(1.25);
+  transition: all 0.3s ease-out;
+}
+
+.login {
+  background-color: var(--phosphor-green);
+  border-radius: 15px;
+}
+
+.fa-bars {
+  color: var(--arctic-white);
+}
+
+.fa-times {
+  color: var(--arctic-white);
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .NavbarItems {
+    position: relative;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 8vh;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.3s ease;
+    grid-gap: 0px;
+  }
+
+  .nav-menu.active {
+    background: var(--phosphor-green);
+    left: 0;
+    opacity: 1;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background: var(--phosphor-green);
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 4vh;
+    left: 20px;
+    transform: translateY(-50%);
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 4vh;
+    right: 40px;
+    transform: translateY(-50%);
+    padding: 1rem;
+  }
+}
