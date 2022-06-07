@@ -1,0 +1,87 @@
+.HomeCard {
+  color: var(--grey-text);
+  min-height: 100vh;
+  background: var(--arctic-white);
+  padding-top: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify;
+  padding-bottom: 50px;
+}
+
+.sections {
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 80px;
+}
+
+.card-title {
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--phosphor-green);
+  color: black;
+}
+
+.description {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.check-mark-list {
+  margin: 0;
+  padding: 5px 0 5px 30px;
+  list-style: none;
+  background-image: url("../../assets/list-style/list_check_style.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+}
+
+.check-mark-list:hover {
+  filter: brightness(1.25);
+}
+
+.section-title {
+  color: black;
+  font-weight: 400;
+  font-size: 1.1;
+  padding-bottom: 15px;
+}
+
+.contact-us-button {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: var(--phosphor-green);
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  color: var(--arctic-white);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-us-button:hover {
+  filter: brightness(1.25);
+}
+
+@media screen and (max-width: 850px) {
+  .sections {
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 15px;
+  }
+
+  .description {
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+
+  .contact-us-button {
+    margin-top: 15px;
+    text-align: center;
+  }
+}

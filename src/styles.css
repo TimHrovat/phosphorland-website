@@ -2,7 +2,9 @@
 
 :root {
   --arctic-white: #e7e6eb;
-  --phosphor-green: rgb(5, 92, 5);
+  /* --phosphor-green: rgb(5, 92, 5); */
+  --phosphor-green: #439766;
+  --grey-text: rgb(70, 70, 70);
 }
 
 * {
@@ -10,6 +12,7 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -47,6 +50,12 @@ body {
 }
 
 .content {
-  height: 100vh;
-  background-color: var(--arctic-white);
+  padding-bottom: 50px;
+  margin: 0;
+  padding: 0;
+  background: var(--arctic-white);
+}
+
+.phosphor-green {
+  color: var(--phosphor-green);
 }

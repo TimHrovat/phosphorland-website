@@ -4,15 +4,24 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 class Navbar extends Component {
-  state = { active: false };
+  state = { active: false, scrolled: false };
 
   handleClick = () => {
     this.setState({ active: !this.state.active });
   };
 
   render() {
+    window.addEventListener("scroll", (event) => {
+      if (window.scrollY >= 300) {
+        this.setState({ scrolled: true });
+      } else {
+        this.setState({ scrolled: false });
+      }
+    });
+
     return (
-      <div className="nav">
+      <div>
+        <div className={this.state.scrolled ? "nav" : ""}></div>
         <nav className="NavbarItems">
           <h1 className="navbar-logo">
             <Link to="/">Smart Traps</Link>
