@@ -68,9 +68,13 @@ function Home() {
             {SmallCardsList.map((card, index) => {
               return (
                 <li key={index} className="small-card">
-                  <img src={card.icon} alt={card.title} />
-                  <h1>{card.title}</h1>
-                  <p>{card.description}</p>
+                  <img
+                    className="small-card-icon"
+                    src={card.icon}
+                    alt={card.title}
+                  />
+                  <h3 className="small-card-title">{card.title}</h3>
+                  <p className="small-card-description">{card.description}</p>
                 </li>
               );
             })}

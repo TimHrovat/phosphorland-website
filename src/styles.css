@@ -35,6 +35,48 @@ body {
   text-align: center;
 }
 
+.login-box {
+  display: block;
+  color: black;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.login-input {
+  position: left;
+  background-position-y: center;
+  background-position-x: 5px;
+  padding-left: 45px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: rgba(196, 196, 196, 0.7);
+}
+
+.usrnm {
+  background-image: url("./assets/login-page-icons/user-svgrepo-com.svg");
+}
+
+.pswd {
+  background-image: url("./assets/login-page-icons/lock-svgrepo-com.svg");
+}
+
+.login-submit {
+  width: 100%;
+  border: none;
+  height: 50px;
+  background-color: rgba(67, 151, 102, 0.7);
+  border-radius: 50px;
+  margin-top: 20px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
 .title h1 {
   text-transform: uppercase;
   font-size: 2.8rem;
