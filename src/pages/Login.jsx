@@ -5,6 +5,7 @@ function Login() {
   return (
     <div className="title-slide">
       <div className="title login-box">
+        <h1 className="login-title">Login</h1>
         <form>
           <input
             type="text"

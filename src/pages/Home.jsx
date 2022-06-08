@@ -11,7 +11,7 @@ function Home() {
       <div className="title-slide">
         <div className="title">
           <FadeInOut show={true} duration={800}>
-            <h1>Automatic pest monitoring</h1>
+            <h1 className="home-heading">Automatic pest monitoring</h1>
             <h2>Our traps can monitor all types of insects on your farm.</h2>
           </FadeInOut>
         </div>
