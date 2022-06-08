@@ -64,6 +64,7 @@ function Home() {
           </div>
         </div>
         <div className="HomeCard">
+          <h1 className="features-title">Features</h1>
           <ul className="small-cards-list">
             {SmallCardsList.map((card, index) => {
               return (

@@ -1,6 +1,5 @@
 .HomeCard {
   color: var(--grey-text);
-  min-height: 100vh;
   background: var(--arctic-white);
   padding-top: 50px;
   padding-left: 10%;
@@ -22,6 +21,14 @@
   margin-bottom: 10px;
   border-bottom: 2px solid var(--phosphor-green);
   color: black;
+}
+
+.features-title {
+  color: black;
+  text-align: center;
+  border-bottom: 2px solid var(--phosphor-green);
+  margin-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 .description {

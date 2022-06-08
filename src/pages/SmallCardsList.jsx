@@ -11,23 +11,25 @@ export const SmallCardsList = [
     icon: trap,
     title: "Trap",
     description:
-      "Energy independent and weather resistant pheromone traps send pictures of attracted pests",
+      "Energy independent and weather resistant pheromone traps capture and send pictures of attracted pests",
   },
   {
     icon: application,
     title: "Application",
     description:
-      "One application allows you to efficiently monitor and successfully respond to the situation in the field",
+      "Our mobile application allows you to efficiently monitor and successfully respond to every situation on the field",
   },
   {
     icon: communication,
     title: "Communication",
-    description: "All data and photographs of your traps are securely archived",
+    description:
+      "All data and photographs of your traps are securely archived and accessible through your mobile phone",
   },
   {
     icon: durability,
     title: "Durability",
-    description: "Durable, light and weather resistant system",
+    description:
+      "Durable, light and weather resistant system that will withstand any conditions",
   },
   {
     icon: format,
@@ -37,11 +39,13 @@ export const SmallCardsList = [
   {
     icon: photographs,
     title: "Photographs",
-    description: "High resolution images of the insects caught in the trap",
+    description:
+      "Access to high resolution images of the insects caught in the trap",
   },
   {
     icon: meterology,
     title: "Meterology",
-    description: "Integrated local weather data for pest prediction",
+    description:
+      "Integrated local weather data for pest prediction and easier decision making",
   },
 ];

@@ -22,7 +22,7 @@ body {
 
 .title-slide {
   width: 100%;
-  height: 92vh;
+  min-height: 92vh;
   color: var(--arctic-white);
   position: relative;
 }
