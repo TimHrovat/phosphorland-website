@@ -1,16 +1,16 @@
 export const MenuItems = [
   {
-    title: "Home",
+    title: "navbar.menu.home",
     link: "/home",
     cName: "nav-links",
   },
   {
-    title: "Contact",
+    title: "navbar.menu.contact",
     link: "/contact",
     cName: "nav-links",
   },
   {
-    title: "Log in",
+    title: "navbar.menu.login",
     link: "/login",
     cName: "nav-links login",
   },

@@ -1,0 +1,112 @@
+{
+  "navbar": {
+    "title": "Smart Traps",
+    "menu": {
+      "home": "Home",
+      "contact": "Contact",
+      "login": "Log in"
+    }
+  },
+  "footer": {
+    "title": {
+      "left-paragraph": "© Copyright ",
+      "right-paragraph": ". All Rights Reserved."
+    },
+    "subtitle": {
+      "paragraph": "Powered by "
+    }
+  },
+  "home": {
+    "title": "AUTOMATIC PEST MONITORING",
+    "subtitle": "Our traps can monitor all types of insects on your farm.",
+    "content": {
+      "main": {
+        "title": "Traps",
+        "description-first": "Insects, disease and weather challenges can cost a lot of work and revenue. With Phosphorland traps, you can protect your crops and investments.",
+        "description-second": "Our Smart Traps are an automated system for monitoring insects, attracted to them. It works in all areas covered by GPRS, 3G or LTE network. The system consists of fully integrated, automated and easy-to-use tools.",
+        "list": {
+          "title": "Benefits for profucers",
+          "item": {
+            "1": "Greater monitoring accuracy at a lower cost",
+            "2": "Fewer field visits and more efficient pest control",
+            "3": "Optimization in the application of pesticides",
+            "4": "Near real-time insight into a pest attack",
+            "5": "Data sharing made easy with Eng. Agronomist"
+          }
+        },
+        "description-third": "The system provides near real-time indications of pest occurrences. Improved monitoring accuracy will significantly increase the quality and feasibility of your decision making.",
+        "contact-button": "Contact us"
+      },
+      "cards": {
+        "title": "Features",
+        "child": {
+          "1": {
+            "title": "Trap",
+            "description": "Energy independent and weather resistant pheromone traps capture and send pictures of attracted pests"
+          },
+          "2": {
+            "title": "Application",
+            "description": "Our mobile application allows you to efficiently monitor and successfully respond to every situation on the field"
+          },
+          "3": {
+            "title": "Communication",
+            "description": "All data and photographs of your traps are securely archived and accessible through your mobile phone"
+          },
+          "4": {
+            "title": "Durability",
+            "description": "Durable, light and weather resistant system that will withstand any conditions"
+          },
+          "5": {
+            "title": "Format",
+            "description": "Standard format boxes capture pests efficiently"
+          },
+          "6": {
+            "title": "Photographs",
+            "description": "Access to high resolution images of the insects caught in the trap"
+          },
+          "7": {
+            "title": "Meterology",
+            "description": "Integrated local weather data for pest prediction and easier decision making"
+          }
+        }
+      }
+    }
+  },
+  "contact": {
+    "section": {
+      "1": {
+        "title": "Address",
+        "description": {
+          "1": "R. do Conhecimento no10,",
+          "2": "Braga, Portugal",
+          "3": "4730-575"
+        }
+      },
+      "2": {
+        "title": "Phone",
+        "description": "+351 966 586 020"
+      },
+      "3": {
+        "title": "Email",
+        "description": "Info@phosphorland.pt"
+      },
+      "4": {
+        "title": "Contact Us",
+        "description": {
+          "1": "Full Name",
+          "2": "Email",
+          "3": "Enter Message"
+        }
+      }
+    },
+    "button": "Send"
+  },
+  "login": {
+    "title": "Log in",
+    "form": {
+      "usrnm": "Username",
+      "pswd": "Password"
+    },
+    "button": "Enter"
+  }
+}

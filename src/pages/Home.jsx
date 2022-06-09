@@ -4,67 +4,68 @@ import "./styles/cards.css";
 import "./styles/small_cards.css";
 import { Link } from "react-router-dom";
 import { SmallCardsList } from "./SmallCardsList";
+import { useTranslation } from "react-i18next";
 
 function Home() {
+  // eslint-disable-next-line
+  const [t, i18n] = useTranslation("common");
+
   return (
     <>
       <div className="title-slide">
         <div className="title">
           <FadeInOut show={true} duration={800}>
-            <h1 className="home-heading">Automatic pest monitoring</h1>
-            <h2>Our traps can monitor all types of insects on your farm.</h2>
+            <h1 className="home-heading">{t("home.title")}</h1>
+            <h2>{t("home.subtitle")}</h2>
           </FadeInOut>
         </div>
       </div>
       <div className="content">
         <div className="HomeCard">
-          <h1 className="card-title">Traps</h1>
+          <h1 className="card-title">{t("home.content.main.title")}</h1>
           <p className="description">
-            Insects, disease and weather challenges can cost a lot of work and
-            revenue. With Phosphorland traps, you can protect your crops and
-            investments.
+            {t("home.content.main.description-first")}
           </p>
           <p className="description">
-            Our Smart Traps are an automated system for monitoring insects,
-            attracted to them. It works in all areas covered by GPRS, 3G or LTE
-            network. The system consists of fully integrated, automated and
-            easy-to-use tools.
+            {t("home.content.main.description-second")}
           </p>
           <div className="sections">
             <div>
-              <h2 className="section-title">Benefits for profucers</h2>
+              <h2 className="section-title">
+                {t("home.content.main.list.title")}
+              </h2>
               <ul>
                 <li className="check-mark-list">
-                  Greater monitoring accuracy at a lower cost
+                  {t("home.content.main.list.item.1")}
                 </li>
                 <li className="check-mark-list">
-                  Fewer field visits and more efficient pest control
+                  {t("home.content.main.list.item.2")}
                 </li>
                 <li className="check-mark-list">
-                  Optimization in the application of pesticides
+                  {t("home.content.main.list.item.3")}
                 </li>
                 <li className="check-mark-list">
-                  Near real-time insight into a pest attack
+                  {t("home.content.main.list.item.4")}
                 </li>
                 <li className="check-mark-list">
-                  Data sharing made easy with Eng. Agronomist
+                  {t("home.content.main.list.item.5")}
                 </li>
               </ul>
             </div>
             <div>
               <p className="description">
-                The system provides near real-time indications of pest
-                occurrences. Improved monitoring accuracy will significantly
-                increase the quality and feasibility of your decision making.
+                {t("home.content.main.description-third")}
               </p>
               <Link to="/contact">
-                <button className="contact-us-button">Contact us</button>
+                <button className="contact-us-button">
+                  {t("home.content.main.contact-button")}
+                </button>
               </Link>
             </div>
           </div>
         </div>
         <div className="HomeCard">
-          <h1 className="features-title">Features</h1>
+          <h1 className="features-title">{t("home.content.cards.title")}</h1>
           <ul className="small-cards-list">
             {SmallCardsList.map((card, index) => {
               return (
@@ -74,8 +75,10 @@ function Home() {
                     src={card.icon}
                     alt={card.title}
                   />
-                  <h3 className="small-card-title">{card.title}</h3>
-                  <p className="small-card-description">{card.description}</p>
+                  <h3 className="small-card-title">{t(card.title)}</h3>
+                  <p className="small-card-description">
+                    {t(card.description)}
+                  </p>
                 </li>
               );
             })}

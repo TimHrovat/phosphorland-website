@@ -78,9 +78,8 @@ textarea:hover {
 }
 
 .contact-form textarea {
-  resize: vertical;
-  max-height: 200px;
-  min-height: 60px;
+  resize: none;
+  height: 180px;
   padding-top: 5px;
 }
 
@@ -120,7 +119,7 @@ textarea:hover {
 
 @media screen and (max-width: 850px) {
   .title-slide-mobile-expand {
-    height: 150vh;
+    height: 1000px;
   }
 
   .contact-info {
@@ -141,4 +140,10 @@ textarea:hover {
   .contact-form {
     width: 80%;
   }
+}
+
+iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
 }

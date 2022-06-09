@@ -1,0 +1,112 @@
+{
+  "navbar": {
+    "title": "Smart Traps",
+    "menu": {
+      "home": "Início",
+      "contact": "Contatos",
+      "login": "Entrar"
+    }
+  },
+  "footer": {
+    "title": {
+      "left-paragraph": "© Direito Autoral ",
+      "right-paragraph": ". Todos os direitos reservados."
+    },
+    "subtitle": {
+      "paragraph": "Distribuído por "
+    }
+  },
+  "home": {
+    "title": "MONITORAMENTO AUTOMÁTICO DE PRAGAS",
+    "subtitle": "Nossas armadilhas podem monitorar todos os tipos de insetos em sua fazenda.",
+    "content": {
+      "main": {
+        "title": "Armadilhas",
+        "description-first": "Insetos, doenças e desafios climáticos podem custar muito trabalho e receita. Com as armadilhas Phosphorland, você pode proteger suas colheitas e investimentos.",
+        "description-second": "Nossas Armadilhas Inteligentes são um sistema automatizado de monitoramento de insetos atraídos por eles. Funciona em todas as áreas cobertas pela rede GPRS, 3G ou LTE. O sistema é composto por ferramentas totalmente integradas, automatizadas e fáceis de usar.",
+        "list": {
+          "title": "Benefícios para os produtores",
+          "item": {
+            "1": "Maior precisão de monitoramento a um custo menor",
+            "2": "Menos visitas de campo e controle de pragas mais eficiente",
+            "3": "Otimização na aplicação de agrotóxicos",
+            "4": "Percepção quase em tempo real de um ataque de pragas",
+            "5": "Compartilhamento de dados facilitado com o Eng. Agrônomo"
+          }
+        },
+        "description-third": "O sistema fornece indicações quase em tempo real da ocorrência de pragas. A precisão aprimorada do monitoramento aumentará significativamente a qualidade e a viabilidade de sua tomada de decisão.",
+        "contact-button": "Contate-Nos"
+      },
+      "cards": {
+        "title": "Característicos",
+        "child": {
+          "1": {
+            "title": "Armadilha",
+            "description": "Armadilhas de feromônios independentes de energia e resistentes às intempéries capturam e enviam fotos de pragas atraídas"
+          },
+          "2": {
+            "title": "Inscrição",
+            "description": "Nosso aplicativo móvel permite monitorar com eficiência e responder com sucesso a todas as situações em campo"
+          },
+          "3": {
+            "title": "Comunicação",
+            "description": "Todos os dados e fotografias das suas armadilhas são arquivados de forma segura e acessíveis através do seu telemóvel"
+          },
+          "4": {
+            "title": "Durabilidade",
+            "description": "Sistema durável, leve e resistente às intempéries que resistirá a quaisquer condições"
+          },
+          "5": {
+            "title": "Formato",
+            "description": "Caixas de formato padrão capturam pragas com eficiência"
+          },
+          "6": {
+            "title": "Fotografias",
+            "description": "Acesso a imagens de alta resolução dos insetos capturados na armadilha"
+          },
+          "7": {
+            "title": "Meteorologia",
+            "description": "Dados climáticos locais integrados para previsão de pragas e tomada de decisão mais fácil"
+          }
+        }
+      }
+    }
+  },
+  "contact": {
+    "section": {
+      "1": {
+        "title": "Endereço",
+        "description": {
+          "1": "R. do Conhecimento no10,",
+          "2": "Braga, Portugal",
+          "3": "4730-575"
+        }
+      },
+      "2": {
+        "title": "Telefone",
+        "description": "+351 966 586 020"
+      },
+      "3": {
+        "title": "Email",
+        "description": "Info@phosphorland.pt"
+      },
+      "4": {
+        "title": "Contate-nos",
+        "description": {
+          "1": "Nome completo",
+          "2": "Email",
+          "3": "Digite a mensagem"
+        }
+      }
+    },
+    "button": "Mandar"
+  },
+  "login": {
+    "title": "Conecte-se",
+    "form": {
+      "usrnm": "Nome de usuário",
+      "pswd": "Senha"
+    },
+    "button": "Entrar"
+  }
+}

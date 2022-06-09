@@ -9,43 +9,37 @@ import trap from "../assets/small-card-icons/trap.png";
 export const SmallCardsList = [
   {
     icon: trap,
-    title: "Trap",
-    description:
-      "Energy independent and weather resistant pheromone traps capture and send pictures of attracted pests",
+    title: "home.content.cards.child.1.title",
+    description: "home.content.cards.child.1.description",
   },
   {
     icon: application,
-    title: "Application",
-    description:
-      "Our mobile application allows you to efficiently monitor and successfully respond to every situation on the field",
+    title: "home.content.cards.child.2.title",
+    description: "home.content.cards.child.2.description",
   },
   {
     icon: communication,
-    title: "Communication",
-    description:
-      "All data and photographs of your traps are securely archived and accessible through your mobile phone",
+    title: "home.content.cards.child.3.title",
+    description: "home.content.cards.child.3.description",
   },
   {
     icon: durability,
-    title: "Durability",
-    description:
-      "Durable, light and weather resistant system that will withstand any conditions",
+    title: "home.content.cards.child.4.title",
+    description: "home.content.cards.child.4.description",
   },
   {
     icon: format,
-    title: "Format",
-    description: "Standard format boxes capture pests efficiently",
+    title: "home.content.cards.child.5.title",
+    description: "home.content.cards.child.5.description",
   },
   {
     icon: photographs,
-    title: "Photographs",
-    description:
-      "Access to high resolution images of the insects caught in the trap",
+    title: "home.content.cards.child.6.title",
+    description: "home.content.cards.child.6.description",
   },
   {
     icon: meterology,
-    title: "Meterology",
-    description:
-      "Integrated local weather data for pest prediction and easier decision making",
+    title: "home.content.cards.child.7.title",
+    description: "home.content.cards.child.7.description",
   },
 ];

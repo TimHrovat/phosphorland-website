@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { withTranslation } from "react-i18next";
 
 class Navbar extends Component {
   state = { active: false, scrolled: false };
@@ -11,6 +12,7 @@ class Navbar extends Component {
   };
 
   render() {
+    const { t } = this.props;
     window.addEventListener("scroll", (event) => {
       if (window.scrollY >= 300) {
         this.setState({ scrolled: true });
@@ -24,7 +26,7 @@ class Navbar extends Component {
         <div className={this.state.scrolled ? "nav" : ""}></div>
         <nav className="NavbarItems">
           <h1 className="navbar-logo">
-            <Link to="/">Smart Traps</Link>
+            <Link to="/">{t("navbar.title")}</Link>
           </h1>
           <div className="menu-icon" onClick={this.handleClick}>
             <i
@@ -37,7 +39,7 @@ class Navbar extends Component {
               return (
                 <li key={index}>
                   <Link className={item.cName} to={item.link}>
-                    {item.title}
+                    {t(item.title)}
                   </Link>
                 </li>
               );
@@ -49,4 +51,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default withTranslation("common")(Navbar);
