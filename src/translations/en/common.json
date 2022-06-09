@@ -108,5 +108,9 @@
       "pswd": "Password"
     },
     "button": "Enter"
+  },
+  "error": {
+    "title": "Error 404: Page not found",
+    "button": "Return home"
   }
 }

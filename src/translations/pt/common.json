@@ -108,5 +108,9 @@
       "pswd": "Senha"
     },
     "button": "Entrar"
+  },
+  "error": {
+    "title": "Erro 404 - Página Não Encontrada",
+    "button": "Voltar para casa"
   }
 }
