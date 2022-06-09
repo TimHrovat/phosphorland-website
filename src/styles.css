@@ -125,16 +125,16 @@ body {
   background-color: transparent;
   z-index: 2;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .translate-button img {
   width: 25px;
   height: 25px;
   transition: all 0.3s ease;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .translate-button:hover img {
-  filter: brightness(1.25);
   width: 35px;
 }
