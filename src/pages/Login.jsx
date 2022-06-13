@@ -17,12 +17,16 @@ function Login() {
             className="login-input usrnm"
           ></input>
           <input
-            type="text"
+            type="password"
             id="pswd"
             name="pswd"
             placeholder={t("login.form.pswd")}
             className="login-input pswd"
           ></input>
+          <div className="login-checkbox">
+            <label for="rmbrme">{t("login.form.rmbrme")}</label>
+            <input type="checkbox" id="rmbrme" name="rmbrme"></input>
+          </div>
           <input
             type="submit"
             className="login-submit"

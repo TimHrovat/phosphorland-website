@@ -105,7 +105,8 @@
     "title": "Conecte-se",
     "form": {
       "usrnm": "Nome de usuário",
-      "pswd": "Senha"
+      "pswd": "Senha",
+      "rmbrme": "Lembre de mim"
     },
     "button": "Entrar"
   },

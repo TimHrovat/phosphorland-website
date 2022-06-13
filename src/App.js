@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 import "./styles.css";
 import { useState } from "react";
 import Navbar from "./components/navbar/Navbar.jsx";
@@ -44,6 +45,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />

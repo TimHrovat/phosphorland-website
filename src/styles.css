@@ -138,3 +138,24 @@ body {
 .translate-button:hover img {
   width: 35px;
 }
+
+.login-checkbox {
+  white-space: nowrap;
+  float: left;
+  color: var(--arctic-white);
+  font-size: 0.8rem;
+}
+
+.login-checkbox label {
+  margin: 0;
+  padding: 0;
+}
+
+.login-checkbox input {
+  margin: 0;
+  padding: 0;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  border-radius: 50%;
+}

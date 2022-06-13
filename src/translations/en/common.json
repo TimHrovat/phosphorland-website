@@ -105,7 +105,8 @@
     "title": "Log in",
     "form": {
       "usrnm": "Username",
-      "pswd": "Password"
+      "pswd": "Password",
+      "rmbrme": "Remember me"
     },
     "button": "Enter"
   },
