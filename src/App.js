@@ -5,6 +5,7 @@ import ErrorPage from "./pages/ErrorPage";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import PrivateRoute from "./components/PrivateRoute";
 import "./styles.css";
 import { useState } from "react";
 import Navbar from "./components/navbar/Navbar.jsx";
@@ -12,6 +13,7 @@ import Footer from "./components/footer/Footer.jsx";
 import { useTranslation } from "react-i18next";
 import en from "./assets/flag_icons/en.svg";
 import pt from "./assets/flag_icons/pt.svg";
+import { AuthProvider } from "./contexts/AuthContext";
 
 function App() {
   // eslint-disable-next-line
@@ -40,14 +42,17 @@ function App() {
         <Navbar />
         <div className="bg-img"></div>
       </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
+      <AuthProvider>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/dashboard" element={<PrivateRoute />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </AuthProvider>
       <Footer />
     </Router>
   );

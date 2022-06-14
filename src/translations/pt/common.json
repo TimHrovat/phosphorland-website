@@ -4,7 +4,8 @@
     "menu": {
       "home": "Início",
       "contact": "Contatos",
-      "login": "Entrar"
+      "login": "Entrar",
+      "dashboard": "Painel"
     }
   },
   "footer": {
@@ -105,10 +106,26 @@
     "title": "Conecte-se",
     "form": {
       "usrnm": "Nome de usuário",
-      "pswd": "Senha",
-      "rmbrme": "Lembre de mim"
+      "pswd": "Senha"
     },
-    "button": "Entrar"
+    "button": "Entrar",
+    "user-without-acc": {
+      "paragraph": "Não tem uma conta?",
+      "link": "Registro"
+    }
+  },
+  "register": {
+    "title": "Inscrever-se",
+    "form": {
+      "usrnm": "Nome de usuário",
+      "pswd": "Senha",
+      "confirm-pswd": "Confirme a Senha"
+    },
+    "button": "Registro",
+    "user-has-acc": {
+      "paragraph": "Já tem uma conta?",
+      "link": "Conecte-se"
+    }
   },
   "error": {
     "title": "Erro 404 - Página Não Encontrada",

@@ -40,6 +40,15 @@ body {
   color: black;
   width: 400px;
   border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.login-box p {
+  color: var(--arctic-white);
+}
+
+.login-box p:hover a {
+  color: var(--phosphor-green);
 }
 
 .login-input {

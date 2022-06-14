@@ -3,9 +3,10 @@ import { MenuItems } from "./MenuItems";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { withTranslation } from "react-i18next";
+import { auth } from "../../firebase";
 
 class Navbar extends Component {
-  state = { active: false, scrolled: false };
+  state = { active: false, scrolled: false, skipIndex: 3 };
 
   handleClick = () => {
     this.setState({ active: !this.state.active });

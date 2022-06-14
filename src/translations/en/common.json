@@ -4,7 +4,8 @@
     "menu": {
       "home": "Home",
       "contact": "Contact",
-      "login": "Log in"
+      "login": "Log in",
+      "dashboard": "Dashboard"
     }
   },
   "footer": {
@@ -105,10 +106,26 @@
     "title": "Log in",
     "form": {
       "usrnm": "Username",
-      "pswd": "Password",
-      "rmbrme": "Remember me"
+      "pswd": "Password"
     },
-    "button": "Enter"
+    "button": "Enter",
+    "user-without-acc": {
+      "paragraph": "Don't have an account?",
+      "link": "Register"
+    }
+  },
+  "register": {
+    "title": "Sign up",
+    "form": {
+      "usrnm": "Username",
+      "pswd": "Password",
+      "confirm-pswd": "Confirm password"
+    },
+    "button": "Register",
+    "user-has-acc": {
+      "paragraph": "Already have an account?",
+      "link": "Log in"
+    }
   },
   "error": {
     "title": "Error 404: Page not found",
