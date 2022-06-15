@@ -4,14 +4,13 @@ import { useAuth } from "../contexts/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-import auth from "../firebase";
 import firebase from "firebase/compat/app";
 
 function Login() {
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  const { login, currentUser, logout } = useAuth();
+  const { login } = useAuth();
   const [error, setError] = useState();
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -23,19 +22,16 @@ function Login() {
       setError("");
       setLoading(true);
       await login(emailRef.current.value, passwordRef.current.value);
-      console.log(firebase.auth().currentUser.emailVerified);
       if (firebase.auth().currentUser.emailVerified) {
         navigate("/dashboard");
       } else {
-        setError("Email not verified.");
+        setError("login.error.non-verified");
         navigate("/confirmemail");
-        // await logout();
       }
     } catch {
-      setError("Wrong username or password.");
+      setError("login.error.wrong-usrnm-pswd");
     }
     setLoading(false);
-    document.querySelector(".error").textContent = error;
   }
 
   // eslint-disable-next-line
@@ -63,9 +59,7 @@ function Login() {
               className="login-input pswd"
               ref={passwordRef}
             ></input>
-
-            <span className="error"></span>
-
+            <span className="error">{t(error)}</span>
             <input
               type="submit"
               disabled={loading}

@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { useAuth } from "../contexts/AuthContext";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react";
 import DashboardNavbar from "../components/dashboard-navbar/DashboardNavbar";
 import DashboardContent from "../components/dashboard-content/DashboardContent";
 

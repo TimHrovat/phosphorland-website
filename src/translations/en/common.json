@@ -112,6 +112,10 @@
     "user-without-acc": {
       "paragraph": "Don't have an account?",
       "link": "Register"
+    },
+    "error": {
+      "wrong-usnm-pswd": "Incorrect username or password",
+      "non-verified": "Email has not been verified yet"
     }
   },
   "register": {
@@ -125,6 +129,11 @@
     "user-has-acc": {
       "paragraph": "Already have an account?",
       "link": "Log in"
+    },
+    "error": {
+      "password-match": "Passwords do not match",
+      "password-length": "Password must be at least 6 characters long",
+      "failed": "Failed to sign up"
     }
   },
   "error": {
@@ -151,6 +160,7 @@
       "3": "Home",
       "4": "Sign out"
     },
-    "info": "Email sent successfully"
+    "info": "Email sent successfully",
+    "err": "Cannot send email so soon after the other one"
   }
 }

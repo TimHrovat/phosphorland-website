@@ -13,9 +13,11 @@ function ErrorPage() {
       <Navbar />
       <div className="title-slide">
         <div className="title">
-          <h1 className="home-heading">{t("error.title")}</h1>
+          <h1 className="home-heading">{t("errorpage.title")}</h1>
           <Link to="/home">
-            <button className="contact-us-button">{t("error.button")}</button>
+            <button className="contact-us-button">
+              {t("errorpage.button")}
+            </button>
           </Link>
         </div>
       </div>

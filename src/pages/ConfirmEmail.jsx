@@ -8,6 +8,8 @@ export default function ConfirmEmail() {
   const { confirmEmail, logout } = useAuth();
   const [loading, setLoading] = React.useState(false);
   const [emailSent, setEmailSent] = React.useState(false);
+  const [msg, setMsg] = React.useState("verification.info");
+  // eslint-disable-next-line
   const [t, i18n] = useTranslation("common");
 
   async function handleConfirmEmail(e) {
@@ -16,11 +18,13 @@ export default function ConfirmEmail() {
     try {
       setLoading(true);
       await confirmEmail();
-      setEmailSent(true);
+      setMsg("verification.info");
     } catch (err) {
       console.log(err);
+      setMsg("verification.err");
     }
     setLoading(false);
+    setEmailSent(true);
   }
 
   async function handleLogout(e) {
@@ -48,7 +52,7 @@ export default function ConfirmEmail() {
           >
             {t("verification.button.1")}
           </button>
-          {emailSent ? <p className="info">Email sent successfully</p> : <></>}
+          {emailSent ? <p className="info">{t(msg)}</p> : <></>}
           <p>{t("verification.tip.2")}</p>
           <button
             className="prim-button"

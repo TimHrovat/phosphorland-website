@@ -1,5 +1,4 @@
 import React from "react";
-import auth from "../../firebase";
 import { useAuth } from "../../contexts/AuthContext";
 import "./dashboard-navbar.css";
 import { useNavigate } from "react-router-dom";
@@ -8,18 +7,17 @@ import { useTranslation } from "react-i18next";
 export default function DashboardNavbar() {
   const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
-  const [error, setError] = React.useState();
   const [loading, setLoading] = React.useState(false);
+  // eslint-disable-next-line
   const [t, i18n] = useTranslation("common");
 
   async function handleSignOut() {
     try {
-      setError("");
       setLoading(true);
       await logout();
       navigate("/home");
-    } catch {
-      setError("Could not sign out");
+    } catch (e) {
+      console.log(e);
     }
     setLoading(false);
   }

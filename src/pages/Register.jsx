@@ -19,7 +19,10 @@ function Register() {
     e.preventDefault();
 
     if (passwordRef.current.value !== confirmPasswordRef.current.value) {
-      return setError("Passwords do not match");
+      return setError("register.error.password-match");
+    }
+    if (passwordRef.current.value.length < 6) {
+      return setError("register.error.password-length");
     }
 
     try {
@@ -29,7 +32,7 @@ function Register() {
       await confirmEmail();
       navigate("/dashboard");
     } catch {
-      setError("Failed to sign up");
+      setError("register.error.failed");
     }
     setLoading(false);
   }
@@ -67,6 +70,7 @@ function Register() {
               className="login-input pswd"
               ref={confirmPasswordRef}
             ></input>
+            <span className="error">{t(error)}</span>
             <input
               type="submit"
               disabled={loading}
