@@ -148,23 +148,67 @@ body {
   width: 35px;
 }
 
-.login-checkbox {
-  white-space: nowrap;
-  float: left;
+.error {
+  color: rgb(224, 2, 2);
+}
+
+.confirm-email-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--arctic-white);
+  width: 50%;
+  border-radius: 30px;
+  color: var(--grey-text);
+  text-align: center;
+  padding: 30px;
+}
+
+.confirm-email-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.confirm-email-container .prim-button {
+  width: 60%;
+  padding: 10px 0 10px 0;
+  margin-bottom: 20px;
+  border: none;
+  background-color: var(--phosphor-green);
+  border-radius: 30px;
   color: var(--arctic-white);
-  font-size: 0.8rem;
+  transition: all 0.3s ease;
 }
 
-.login-checkbox label {
-  margin: 0;
-  padding: 0;
+.confirm-email-container .prim-button:hover {
+  filter: brightness(1.25);
+  cursor: pointer;
 }
 
-.login-checkbox input {
-  margin: 0;
-  padding: 0;
-  width: 15px;
-  height: 15px;
-  margin-left: 5px;
-  border-radius: 50%;
+.info {
+  color: rgb(60, 60, 204);
+  margin-bottom: 20px;
+}
+
+.sec-btn {
+  width: 150px;
+  padding: 10px 0 10px 0;
+  background-color: var(--arctic-white);
+  border: 1px solid var(--phosphor-green);
+  border-radius: 30px;
+  color: var(--phosphor-green);
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.sec-btn:hover {
+  color: var(--arctic-white);
+  background-color: var(--phosphor-green);
+}
+
+@media screen and (max-width: 768px) {
+  .confirm-email-container {
+    width: 90%;
+  }
 }

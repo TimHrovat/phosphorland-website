@@ -138,5 +138,19 @@
         "logout": "Sign out"
       }
     }
+  },
+  "verification": {
+    "title": "Please verify your email address",
+    "tip": {
+      "1": "Didn't recieve our email?",
+      "2": "Already verified your email?"
+    },
+    "button": {
+      "1": "Resend email",
+      "2": "Go to dashboard",
+      "3": "Home",
+      "4": "Sign out"
+    },
+    "info": "Email sent successfully"
   }
 }

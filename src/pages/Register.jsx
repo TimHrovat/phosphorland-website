@@ -10,7 +10,7 @@ function Register() {
   const passwordRef = useRef();
   const confirmPasswordRef = useRef();
 
-  const { signup } = useAuth();
+  const { signup, confirmEmail } = useAuth();
   const [error, setError] = useState();
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -26,6 +26,7 @@ function Register() {
       setError("");
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
+      await confirmEmail();
       navigate("/dashboard");
     } catch {
       setError("Failed to sign up");
@@ -60,7 +61,7 @@ function Register() {
             ></input>
             <input
               type="password"
-              id="pswd"
+              id="confpswd"
               name="pswd"
               placeholder={t("register.form.confirm-pswd")}
               className="login-input pswd"

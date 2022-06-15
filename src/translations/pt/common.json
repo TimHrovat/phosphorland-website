@@ -138,5 +138,19 @@
         "logout": "Sair"
       }
     }
+  },
+  "verification": {
+    "title": "Por favor verifique seu endereço de email",
+    "tip": {
+      "1": "Não recebeu seu email?",
+      "2": "Já verificou seu email?"
+    },
+    "button": {
+      "1": "Reenviar email",
+      "2": "Ir para a dashboard",
+      "3": "Início",
+      "4": "Sair"
+    },
+    "info": "Email sent successfully"
   }
 }

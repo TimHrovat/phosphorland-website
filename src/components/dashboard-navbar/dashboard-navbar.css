@@ -66,3 +66,18 @@ aside div div i {
 .home {
   bottom: 75px;
 }
+
+@media screen and (max-width: 1200px) {
+  aside {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  aside {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}

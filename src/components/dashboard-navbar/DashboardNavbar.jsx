@@ -29,7 +29,7 @@ export default function DashboardNavbar() {
       <aside>
         <div className="user-info">
           <div className="user-icon">
-            <i class="fa-solid fa-user"></i>
+            <i className="fa-solid fa-user"></i>
           </div>
           <p>{currentUser.email}</p>
         </div>
@@ -45,7 +45,7 @@ export default function DashboardNavbar() {
           </button>
           <button
             className="dashboard-button logout"
-            disable={loading}
+            disabled={loading}
             onClick={handleSignOut}
           >
             {t("dashboard.navbar.button.logout")}

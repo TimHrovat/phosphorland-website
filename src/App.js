@@ -47,6 +47,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<PrivateRoute />} />
+          <Route path="/confirmemail" element={<PrivateRoute />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </AuthProvider>

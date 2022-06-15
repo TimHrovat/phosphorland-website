@@ -4,6 +4,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
+  sendEmailVerification,
 } from "firebase/auth";
 
 const AuthContext = React.createContext();
@@ -28,6 +29,10 @@ export function AuthProvider({ children }) {
     return signOut(auth);
   }
 
+  function confirmEmail() {
+    return sendEmailVerification(auth.currentUser);
+  }
+
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setCurrentUser(user);
@@ -36,7 +41,7 @@ export function AuthProvider({ children }) {
     return unsubscribe;
   }, []);
 
-  const value = { currentUser, signup, login, logout };
+  const value = { currentUser, signup, login, logout, confirmEmail };
   return (
     <AuthContext.Provider value={value}>
       {!loading && children}
