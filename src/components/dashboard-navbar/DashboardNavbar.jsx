@@ -29,7 +29,7 @@ export default function DashboardNavbar() {
 
   return (
     <>
-      <nav>
+      <nav className="dashboard-nav" id="dashboard-nav">
         <h1>Smart Traps</h1>
         <div style={{ float: "right" }}>
           <i
