@@ -1,0 +1,68 @@
+:root {
+  --dashboard-navbar-bg: #272727;
+}
+
+aside {
+  width: 15%;
+  min-height: 100vh;
+  background-color: var(--dashboard-navbar-bg);
+  color: var(--arctic-white);
+  position: relative;
+}
+
+aside div div i {
+  font-size: 80px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-icon {
+  background-color: var(--phosphor-green);
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.user-info {
+  text-align: center;
+  padding: 0 5% 0 5%;
+}
+
+.user-info p {
+  margin-top: 80px;
+  font-size: 0.9rem;
+  word-break: break-word;
+}
+
+.dashboard-button {
+  height: 30px;
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--phosphor-green);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.dashboard-button:hover {
+  filter: brightness(1.25);
+  cursor: pointer;
+}
+
+.logout {
+  bottom: 30px;
+}
+
+.home {
+  bottom: 75px;
+}

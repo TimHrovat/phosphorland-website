@@ -130,5 +130,13 @@
   "error": {
     "title": "Erro 404 - Página Não Encontrada",
     "button": "Voltar para casa"
+  },
+  "dashboard": {
+    "navbar": {
+      "button": {
+        "home": "Início",
+        "logout": "Sair"
+      }
+    }
   }
 }

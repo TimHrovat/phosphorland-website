@@ -1,0 +1,9 @@
+:root {
+  --dashboard-content-bg: #313131;
+}
+
+main {
+  width: 85%;
+  min-height: 100vh;
+  background-color: var(--dashboard-content-bg);
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
 function ErrorPage() {
   // eslint-disable-next-line
@@ -8,6 +10,7 @@ function ErrorPage() {
 
   return (
     <>
+      <Navbar />
       <div className="title-slide">
         <div className="title">
           <h1 className="home-heading">{t("error.title")}</h1>
@@ -16,6 +19,7 @@ function ErrorPage() {
           </Link>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

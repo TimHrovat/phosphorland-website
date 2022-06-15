@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles/contact.css";
 import { useTranslation } from "react-i18next";
+import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
 function Contact() {
   // eslint-disable-next-line
@@ -8,6 +10,7 @@ function Contact() {
 
   return (
     <>
+      <Navbar />
       <div className="title-slide-mobile-expand">
         <div className="sections-contact">
           <ul className="contact-info">
@@ -75,6 +78,7 @@ function Contact() {
         allowfullscreen=""
         loading="lazy"
       ></iframe>
+      <Footer />
     </>
   );
 }

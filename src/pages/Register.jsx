@@ -2,6 +2,8 @@ import React, { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
+import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
 function Register() {
   const emailRef = useRef();
@@ -34,47 +36,51 @@ function Register() {
   // eslint-disable-next-line
   const [t, i18n] = useTranslation("common");
   return (
-    <div className="title-slide">
-      <div className="title login-box">
-        <h1 className="login-title">{t("register.title")}</h1>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            id="usrnm"
-            name="usrnm"
-            placeholder={t("register.form.usrnm")}
-            className="login-input usrnm"
-            ref={emailRef}
-          ></input>
-          <input
-            type="password"
-            id="pswd"
-            name="pswd"
-            placeholder={t("register.form.pswd")}
-            className="login-input pswd"
-            ref={passwordRef}
-          ></input>
-          <input
-            type="password"
-            id="pswd"
-            name="pswd"
-            placeholder={t("register.form.confirm-pswd")}
-            className="login-input pswd"
-            ref={confirmPasswordRef}
-          ></input>
-          <input
-            type="submit"
-            disabled={loading}
-            className="login-submit"
-            value={t("register.button")}
-          ></input>
-        </form>
-        <p>
-          {t("register.user-has-acc.paragraph") + " "}
-          <Link to="/login">{t("register.user-has-acc.link")}</Link>
-        </p>
+    <>
+      <Navbar />
+      <div className="title-slide">
+        <div className="title login-box">
+          <h1 className="login-title">{t("register.title")}</h1>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              id="usrnm"
+              name="usrnm"
+              placeholder={t("register.form.usrnm")}
+              className="login-input usrnm"
+              ref={emailRef}
+            ></input>
+            <input
+              type="password"
+              id="pswd"
+              name="pswd"
+              placeholder={t("register.form.pswd")}
+              className="login-input pswd"
+              ref={passwordRef}
+            ></input>
+            <input
+              type="password"
+              id="pswd"
+              name="pswd"
+              placeholder={t("register.form.confirm-pswd")}
+              className="login-input pswd"
+              ref={confirmPasswordRef}
+            ></input>
+            <input
+              type="submit"
+              disabled={loading}
+              className="login-submit"
+              value={t("register.button")}
+            ></input>
+          </form>
+          <p>
+            {t("register.user-has-acc.paragraph") + " "}
+            <Link to="/login">{t("register.user-has-acc.link")}</Link>
+          </p>
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 

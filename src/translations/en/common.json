@@ -130,5 +130,13 @@
   "error": {
     "title": "Error 404: Page not found",
     "button": "Return home"
+  },
+  "dashboard": {
+    "navbar": {
+      "button": {
+        "home": "Home",
+        "logout": "Sign out"
+      }
+    }
   }
 }

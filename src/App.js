@@ -38,10 +38,7 @@ function App() {
       <button className="translate-button" onClick={(e) => handleClick(e)}>
         <img src={lang.image} alt={"Set language to: " + lang.language}></img>
       </button>
-      <div className="App">
-        <Navbar />
-        <div className="bg-img"></div>
-      </div>
+
       <AuthProvider>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -53,7 +50,6 @@ function App() {
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </AuthProvider>
-      <Footer />
     </Router>
   );
 }

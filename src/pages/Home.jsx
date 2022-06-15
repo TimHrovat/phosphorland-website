@@ -5,6 +5,8 @@ import "./styles/small_cards.css";
 import { Link } from "react-router-dom";
 import { SmallCardsList } from "./SmallCardsList";
 import { useTranslation } from "react-i18next";
+import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
 function Home() {
   // eslint-disable-next-line
@@ -12,6 +14,7 @@ function Home() {
 
   return (
     <>
+      <Navbar />
       <div className="title-slide">
         <div className="title">
           <FadeInOut show={true} duration={800}>
@@ -85,6 +88,7 @@ function Home() {
           </ul>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
