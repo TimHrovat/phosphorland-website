@@ -10,6 +10,7 @@ export default function DashboardNavbar() {
   const [loading, setLoading] = React.useState(false);
   // eslint-disable-next-line
   const [t, i18n] = useTranslation("common");
+  const [burgerClicked, setBurgerClicked] = React.useState(false);
 
   async function handleSignOut() {
     try {
@@ -22,9 +23,22 @@ export default function DashboardNavbar() {
     setLoading(false);
   }
 
+  function handleClick() {
+    setBurgerClicked(!burgerClicked);
+  }
+
   return (
     <>
-      <aside>
+      <nav>
+        <h1>Smart Traps</h1>
+        <div style={{ float: "right" }}>
+          <i
+            onClick={handleClick}
+            className={!burgerClicked ? "fas fa-bars" : "fas fa-times"}
+          ></i>
+        </div>
+      </nav>
+      <aside className={burgerClicked ? "active" : ""}>
         <div className="user-info">
           <div className="user-icon">
             <i className="fa-solid fa-user"></i>

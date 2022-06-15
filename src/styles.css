@@ -207,6 +207,10 @@ body {
   background-color: var(--phosphor-green);
 }
 
+.dashboard {
+  display: flex;
+}
+
 @media screen and (max-width: 768px) {
   .confirm-email-container {
     width: 90%;

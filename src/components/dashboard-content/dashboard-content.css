@@ -7,3 +7,24 @@ main {
   min-height: 100vh;
   background-color: var(--dashboard-content-bg);
 }
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100vw;
+  }
+  nav {
+    display: block;
+  }
+}

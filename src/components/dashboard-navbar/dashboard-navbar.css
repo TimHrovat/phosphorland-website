@@ -8,6 +8,12 @@ aside {
   background-color: var(--dashboard-navbar-bg);
   color: var(--arctic-white);
   position: relative;
+  transition: all 0.3s ease;
+}
+
+.active {
+  transform: translateX(0%);
+  display: block;
 }
 
 aside div div i {
@@ -80,4 +86,42 @@ aside div div i {
 }
 
 @media screen and (max-width: 768px) {
+  aside {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    top: 8vh;
+    min-height: 92vh;
+    transform: translateX(-100%);
+  }
+  .dashboard-button {
+    width: 60%;
+  }
+}
+
+nav {
+  position: fixed;
+  background: var(--dashboard-navbar-bg);
+  width: 100%;
+  color: var(--arctic-white);
+  height: 8vh;
+  display: none;
+}
+
+nav h1,
+i {
+  margin: auto 0 auto 0;
+  font-size: 1.4rem;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+nav h1 {
+  left: 10%;
+  top: 50%;
+}
+
+nav i {
+  top: 50%;
+  right: 10%;
 }

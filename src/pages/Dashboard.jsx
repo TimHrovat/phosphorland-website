@@ -5,7 +5,7 @@ import DashboardContent from "../components/dashboard-content/DashboardContent";
 export default function Dashboard() {
   return (
     <>
-      <div style={{ display: "flex" }}>
+      <div className="dashboard">
         <DashboardNavbar />
         <DashboardContent />
       </div>
