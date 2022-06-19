@@ -1,3 +1,17 @@
+# Project Description
+
+This project was created during my internship at Phosphorland, Portugal.
+
+The application represents and gives functionality to the company's product called Smart Traps. 
+
+What I learned:
+  - JavaScript
+  - ReactJS framework
+  - Firebase (authentication, file storage, realtime database, ...)
+  - Git & GitHub
+  - Implementation of translation with i18next internationalization package
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
