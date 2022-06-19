@@ -2,7 +2,7 @@
 
 This project was created during my internship at Phosphorland, Portugal.
 
-The application represents and gives functionality to the company's product called Smart Traps. 
+The application presents and gives functionality to the company's product called Smart Traps. 
 
 What I learned:
   - JavaScript
