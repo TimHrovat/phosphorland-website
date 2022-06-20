@@ -7,7 +7,6 @@ export default function Dashboard() {
 
   function handleTrapChange(trap) {
     setTrapState(trap);
-    console.log(trap);
   }
 
   return (
