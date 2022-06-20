@@ -147,6 +147,13 @@
         "home": "Início",
         "logout": "Sair"
       }
+    },
+    "content": {
+      "calendar": {
+        "title": "Selecione a data para visualizar as imagens:",
+        "tooltip": "Data selecionada: ",
+        "button": "Selecionar"
+      }
     }
   },
   "add-trap": {

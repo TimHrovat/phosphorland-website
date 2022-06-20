@@ -147,6 +147,13 @@
         "home": "Home",
         "logout": "Sign out"
       }
+    },
+    "content": {
+      "calendar": {
+        "title": "Select the date to view the images:",
+        "tooltip": "Selected date: ",
+        "button": "Select"
+      }
     }
   },
   "add-trap": {

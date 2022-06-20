@@ -57,8 +57,13 @@ export default function DashboardNavbar(props) {
     return () => {};
   }, []);
 
-  function setTrap(key) {
+  function setTrap(key, index) {
     props.setTrapState(key);
+    const item = document.getElementById("trap" + index);
+    snapChildren.map((child, index) => {
+      document.getElementById("trap" + index).classList.remove("trap-active");
+    });
+    item.classList.add("trap-active");
   }
 
   return (
@@ -86,8 +91,9 @@ export default function DashboardNavbar(props) {
               return (
                 <li
                   key={index}
+                  id={"trap" + index}
                   onClick={() => {
-                    setTrap(child.key);
+                    setTrap(child.key, index);
                   }}
                 >
                   {childValue["name"]}

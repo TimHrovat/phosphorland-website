@@ -9,6 +9,7 @@ aside {
   color: var(--arctic-white);
   position: relative;
   transition: all 0.3s ease;
+  z-index: 1;
 }
 
 .active {
@@ -111,6 +112,7 @@ aside div div i {
   color: var(--arctic-white);
   height: 8vh;
   display: none;
+  z-index: 1;
 }
 
 .dashboard-nav h1,
@@ -160,4 +162,8 @@ aside div div i {
 .trap-list .add-trap:hover {
   filter: brightness(1.25);
   cursor: pointer;
+}
+
+.trap-active {
+  color: var(--phosphor-green);
 }

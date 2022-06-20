@@ -4,11 +4,13 @@ import "react-calendar/dist/Calendar.css";
 import Calendar from "react-calendar";
 import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
 import firebase from "firebase/compat/app";
+import { useTranslation } from "react-i18next";
 
 export default function DashboardContent(props) {
   const [date, setDate] = useState(new Date());
   const [displayDate, setDisplayDate] = useState(true);
   const [allImages, setImages] = useState([]);
+  const [t, i18n] = useTranslation("common");
 
   function loadImages() {
     if (!displayDate) return;
@@ -42,38 +44,48 @@ export default function DashboardContent(props) {
     <>
       <main>
         <section
+          className="calendar-section"
           style={displayDate ? { display: "block" } : { display: "none" }}
         >
-          <h1>Select the date to see the images:</h1>
+          <h1>{t("dashboard.content.calendar.title")}</h1>
           <div className="calendar-container">
             <Calendar onChange={setDate} value={date} />
           </div>
-          <div>Selected date: {date.toDateString()}</div>
+          <div>
+            {t("dashboard.content.calendar.tooltip") +
+              " " +
+              date.toDateString()}
+          </div>
           <button
+            className="navigation-btn"
             onClick={() => {
               setDisplayDate(false);
               loadImages();
             }}
           >
-            change
+            {t("dashboard.content.calendar.button")}
           </button>
         </section>
         <section
+          className="images-section"
           style={!displayDate ? { display: "block" } : { display: "none" }}
         >
-          {allImages.map((image) => {
-            return (
-              <div key={image} className="image">
-                <img src={image} alt="" style={{ width: 300, height: 300 }} />
-              </div>
-            );
-          })}
+          <div>
+            {allImages.map((image) => {
+              return (
+                <div key={image} className="image">
+                  <img src={image} alt="database img" />
+                </div>
+              );
+            })}
+          </div>
           <button
+            className="navigation-btn back"
             onClick={() => {
               setDisplayDate(true);
             }}
           >
-            change
+            <i className="fa-solid fa-angle-left"></i>
           </button>
         </section>
       </main>

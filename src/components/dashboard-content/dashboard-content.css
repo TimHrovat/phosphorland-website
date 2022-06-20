@@ -6,6 +6,8 @@ main {
   width: 85%;
   min-height: 100vh;
   background-color: var(--dashboard-content-bg);
+  color: var(--arctic-white);
+  position: relative;
 }
 
 @media screen and (max-width: 1200px) {
@@ -24,4 +26,67 @@ main {
   main {
     width: 100vw;
   }
+}
+
+.navigation-btn {
+  padding: 5px 30px 5px 30px;
+  background-color: var(--phosphor-green);
+  border: none;
+  border-radius: 20px;
+  color: var(--arctic-white);
+  font-size: 1rem;
+}
+
+.back {
+  position: fixed;
+  bottom: 36px;
+  right: 100px;
+  border-radius: 100%;
+  width: none;
+  padding: 4px 13px 4px 13px;
+}
+
+.navigation-btn:hover {
+  cursor: pointer;
+  filter: brightness(1.25);
+}
+
+.calendar-section {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 500px;
+}
+
+.calendar-container {
+  left: 75px;
+  position: relative;
+}
+
+.calendar-section h1 {
+  margin-bottom: 30px;
+}
+
+.calendar-section button {
+  margin-top: 30px;
+}
+
+.images-section div {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, 300px);
+}
+.images-section {
+  margin: 50px;
+}
+
+.image {
+  display: inline-block;
+}
+
+.image img {
+  width: 300px;
+  height: 200px;
 }
