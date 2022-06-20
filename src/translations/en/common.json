@@ -142,10 +142,23 @@
   },
   "dashboard": {
     "navbar": {
+      "add-trap": "Add trap",
       "button": {
         "home": "Home",
         "logout": "Sign out"
       }
+    }
+  },
+  "add-trap": {
+    "title": "Add trap",
+    "form": {
+      "name": "Name",
+      "id": "Id"
+    },
+    "submit": "Submit",
+    "error": {
+      "exists": "Trap with this ID already exists in the database",
+      "basic": "Trap add failed"
     }
   },
   "verification": {

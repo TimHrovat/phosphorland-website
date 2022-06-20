@@ -53,16 +53,18 @@ aside div div i {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--phosphor-green);
-  border: none;
+  border: 2px solid var(--phosphor-green);
+  background-color: var(--dashboard-navbar-bg);
   border-radius: 20px;
-  color: white;
+  color: var(--phosphor-green);
   font-size: 0.9rem;
+  transition: all 0.3s ease;
 }
 
 .dashboard-button:hover {
-  filter: brightness(1.25);
   cursor: pointer;
+  background-color: var(--phosphor-green);
+  color: var(--arctic-white);
 }
 
 .logout {
@@ -131,4 +133,31 @@ aside div div i {
 
 .dashboard-nav i:hover {
   filter: brightness(1.25);
+}
+
+.trap-list {
+  margin-top: 30px;
+  margin-bottom: 150px;
+  text-align: center;
+}
+
+.trap-list ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.trap-list ul li:hover {
+  list-style: none;
+  filter: brightness(1.25);
+  cursor: pointer;
+}
+
+.trap-list .add-trap {
+  color: var(--phosphor-green);
+  transition: all 0.3s ease;
+}
+
+.trap-list .add-trap:hover {
+  filter: brightness(1.25);
+  cursor: pointer;
 }

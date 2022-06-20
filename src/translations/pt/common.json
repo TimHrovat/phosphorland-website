@@ -142,10 +142,20 @@
   },
   "dashboard": {
     "navbar": {
+      "add-trap": "Adicionar armadilha",
       "button": {
         "home": "Início",
         "logout": "Sair"
       }
+    }
+  },
+  "add-trap": {
+    "title": "Adicionar armadilha",
+    "form": { "name": "Nome", "id": "Id" },
+    "submit": "Enviar",
+    "error": {
+      "exists": "Já existe uma armadilha com o mesmo ID",
+      "basic": "Falha ao adicionar armadilha"
     }
   },
   "verification": {

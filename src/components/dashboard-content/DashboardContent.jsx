@@ -5,7 +5,7 @@ import Calendar from "react-calendar";
 import { getStorage, ref, listAll, getDownloadURL } from "firebase/storage";
 import firebase from "firebase/compat/app";
 
-export default function DashboardContent() {
+export default function DashboardContent(props) {
   const [date, setDate] = useState(new Date());
   const [displayDate, setDisplayDate] = useState(true);
   const [allImages, setImages] = useState([]);
@@ -16,7 +16,12 @@ export default function DashboardContent() {
     setImages([]);
 
     const path =
-      "images/" + firebase.auth().currentUser.uid + "/" + date.toDateString();
+      "users/" +
+      firebase.auth().currentUser.uid +
+      "/traps/" +
+      props.trapID +
+      "/" +
+      date.toDateString();
 
     let storageRef = ref(getStorage(), path);
 
