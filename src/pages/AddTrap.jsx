@@ -60,10 +60,6 @@ function AddTrap() {
   // eslint-disable-next-line
   const [t, i18n] = useTranslation("common");
 
-  if (!currentUser) {
-    navigate("/home");
-  }
-
   return (
     <>
       <div className="title-slide">

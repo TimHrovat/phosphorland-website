@@ -40,10 +40,19 @@ main {
 .back {
   position: fixed;
   bottom: 36px;
-  right: 100px;
+  right: 150px;
   border-radius: 100%;
   width: none;
   padding: 4px 13px 4px 13px;
+}
+
+.add-image {
+  position: fixed;
+  bottom: 36px;
+  right: 95px;
+  border-radius: 100%;
+  width: none;
+  padding: 4px 10px 4px 10px;
 }
 
 .navigation-btn:hover {
@@ -87,6 +96,49 @@ main {
 }
 
 .image img {
-  width: 300px;
-  height: 200px;
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.upload-section {
+  /* background-color: rgb(175, 175, 175); */
+  background-color: var(--grey-text);
+  max-width: 80%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 30px;
+}
+
+#file-input {
+  background-color: var(--arctic-white);
+  color: var(--grey-text);
+}
+
+#file-submit {
+  background-color: var(--phosphor-green);
+  margin-bottom: 0px;
+}
+
+#file-submit:hover {
+  filter: brightness(1.25);
+  cursor: pointer;
+}
+
+.close-upload {
+  float: right;
+  padding: 0px 10px 10px 10px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.close-upload:hover {
+  filter: brightness(1.25);
+}
+
+.error {
+  color: red;
 }

@@ -216,3 +216,9 @@ body {
     width: 90%;
   }
 }
+
+.file {
+  background-image: url("./assets/login-page-icons/file-svgrepo-com.svg");
+  padding-top: 1rem;
+  padding-left: 55px;
+}

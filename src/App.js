@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import PrivateRoute from "./components/PrivateRoute";
 import AddTrap from "./pages/AddTrap";
+import UploadImg from "./pages/UploadImg";
 import "./styles.css";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -46,6 +47,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/addtrap" element={<AddTrap />} />
+          <Route path="/uploadimg" element={<UploadImg />} />
           <Route path="/dashboard" element={<PrivateRoute />} />
           <Route path="/confirmemail" element={<PrivateRoute />} />
           <Route path="*" element={<ErrorPage />} />

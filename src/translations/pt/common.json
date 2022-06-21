@@ -152,7 +152,10 @@
       "calendar": {
         "title": "Selecione a data para visualizar as imagens:",
         "tooltip": "Data selecionada: ",
-        "button": "Selecionar"
+        "button": "Selecionar",
+        "error": {
+          "select-trap": "Selecione uma armadilha para continuar"
+        }
       }
     }
   },
@@ -163,6 +166,13 @@
     "error": {
       "exists": "Já existe uma armadilha com o mesmo ID",
       "basic": "Falha ao adicionar armadilha"
+    }
+  },
+  "add-image": {
+    "title": "Enviar Imagem",
+    "button": "Enviar",
+    "error": {
+      "basic": "Falha no upload da imagem"
     }
   },
   "verification": {

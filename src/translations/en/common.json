@@ -152,7 +152,10 @@
       "calendar": {
         "title": "Select the date to view the images:",
         "tooltip": "Selected date: ",
-        "button": "Select"
+        "button": "Select",
+        "error": {
+          "select-trap": "Select a trap to continue"
+        }
       }
     }
   },
@@ -166,6 +169,13 @@
     "error": {
       "exists": "Trap with this ID already exists in the database",
       "basic": "Trap add failed"
+    }
+  },
+  "add-image": {
+    "title": "Upload Image",
+    "button": "Submit",
+    "error": {
+      "basic": "Image upload failed"
     }
   },
   "verification": {
