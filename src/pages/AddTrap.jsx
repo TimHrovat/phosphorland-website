@@ -1,17 +1,9 @@
 import React, { useRef, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "../contexts/AuthContext";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import firebase from "firebase/compat/app";
-import {
-  getDatabase,
-  ref,
-  set,
-  child,
-  get,
-  on,
-  onValue,
-} from "firebase/database";
+import { getDatabase, ref, set, onValue } from "firebase/database";
 
 function AddTrap() {
   const nameRef = useRef();
@@ -59,6 +51,12 @@ function AddTrap() {
 
   // eslint-disable-next-line
   const [t, i18n] = useTranslation("common");
+
+  useEffect(() => {
+    if (currentUser === null) {
+      navigate("/login");
+    }
+  }, []);
 
   return (
     <>
