@@ -3,7 +3,6 @@ import "./styles/contact.css";
 import { useTranslation } from "react-i18next";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-import axios from "axios";
 
 function Contact() {
   // eslint-disable-next-line
