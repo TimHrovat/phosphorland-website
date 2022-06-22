@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+  min-height: 50px;
+  max-height: 70px;
 }
 
 .nav {
@@ -12,6 +14,7 @@
   opacity: 0.7;
   width: 100%;
   height: 8vh;
+  min-height: 50px;
   z-index: 1;
   transition: all 0.5s ease;
 }
@@ -118,13 +121,6 @@ a {
     border-radius: 0;
   }
 
-  .navbar-logo {
-    position: fixed;
-    top: 4vh;
-    left: 20px;
-    transform: translateY(-50%);
-  }
-
   .menu-icon {
     display: block;
     font-size: 1.5rem;
@@ -135,5 +131,11 @@ a {
     padding: 1rem;
     opacity: 1;
     z-index: 2;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .menu-icon {
+    top: 25px;
   }
 }

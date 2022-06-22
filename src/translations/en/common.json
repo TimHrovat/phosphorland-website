@@ -136,7 +136,7 @@
       "failed": "Failed to sign up"
     }
   },
-  "error": {
+  "errorpage": {
     "title": "Error 404: Page not found",
     "button": "Return home"
   },

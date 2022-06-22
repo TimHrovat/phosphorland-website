@@ -215,6 +215,9 @@ body {
   .confirm-email-container {
     width: 90%;
   }
+  .dashboard {
+    display: block;
+  }
 }
 
 .file {

@@ -4,15 +4,7 @@ import "./dashboard-navbar.css";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import firebase from "firebase/compat/app";
-import {
-  getDatabase,
-  ref,
-  set,
-  child,
-  get,
-  on,
-  onValue,
-} from "firebase/database";
+import { getDatabase, ref, onValue } from "firebase/database";
 import { useEffect } from "react";
 
 export default function DashboardNavbar(props) {
@@ -47,6 +39,7 @@ export default function DashboardNavbar(props) {
   }
 
   useEffect(() => {
+    // eslint-disable-next-line
     const dbRefTrap = ref(db, "users/" + uid + "/traps");
 
     onValue(dbRefTrap, (snap) => {
@@ -55,13 +48,15 @@ export default function DashboardNavbar(props) {
       });
     });
     return () => {};
-  }, []);
+  }, [db, uid]);
 
   function setTrap(key, index) {
     props.setTrapState(key);
     const item = document.getElementById("trap" + index);
     snapChildren.map((child, index) => {
-      document.getElementById("trap" + index).classList.remove("trap-active");
+      return document
+        .getElementById("trap" + index)
+        .classList.remove("trap-active");
     });
     item.classList.add("trap-active");
   }

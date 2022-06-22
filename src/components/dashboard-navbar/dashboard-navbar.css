@@ -96,6 +96,7 @@ aside div div i {
     top: 8vh;
     min-height: 92vh;
     transform: translateX(-100%);
+    display: none;
   }
   .dashboard-button {
     width: 60%;
@@ -107,12 +108,15 @@ aside div div i {
 
 .dashboard-nav {
   position: fixed;
-  background: var(--dashboard-navbar-bg);
+  background-color: var(--dashboard-navbar-bg);
   width: 100%;
   color: var(--arctic-white);
   height: 8vh;
+  min-height: 50px;
+  max-height: 70px;
   display: none;
-  z-index: 1;
+  z-index: 2;
+  /* top: 0%; */
 }
 
 .dashboard-nav h1,

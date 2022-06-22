@@ -56,7 +56,7 @@ function AddTrap() {
     if (currentUser === null) {
       navigate("/login");
     }
-  }, []);
+  }, [currentUser, navigate]);
 
   return (
     <>

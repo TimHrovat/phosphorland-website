@@ -11,7 +11,6 @@ import {
 } from "firebase/storage";
 import firebase from "firebase/compat/app";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
 
 export default function DashboardContent(props) {
   const [date, setDate] = useState(new Date());
@@ -20,12 +19,13 @@ export default function DashboardContent(props) {
   const [allImages, setImages] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState();
+  // eslint-disable-next-line
   const [t, i18n] = useTranslation("common");
-  const navigate = useNavigate();
   const fileRef = useRef();
   const storage = getStorage();
 
   function loadImages() {
+    setLoading(true);
     setImages([]);
 
     const path =
@@ -45,6 +45,7 @@ export default function DashboardContent(props) {
             setImages((allImages) => [...allImages, url]);
           });
         });
+        setLoading(false);
       })
       .catch(function (error) {
         console.log(error);
@@ -116,11 +117,24 @@ export default function DashboardContent(props) {
           className="images-section"
           style={!displayDate ? { display: "block" } : { display: "none" }}
         >
+          <div
+            className="loader"
+            style={loading ? { display: "block" } : { display: "none" }}
+          >
+            <div class="lds-ring">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
           <div>
             {allImages.map((image) => {
               return (
                 <div key={image} className="image">
-                  <img src={image} alt="database img" />
+                  <a href={image} target="_blank" rel="noreferrer">
+                    <img src={image} alt="database img" />
+                  </a>
                 </div>
               );
             })}
@@ -137,7 +151,7 @@ export default function DashboardContent(props) {
           <button
             className="navigation-btn add-image"
             onClick={() => {
-              setDisplayUpload(true);
+              displayUpload ? setDisplayUpload(false) : setDisplayUpload(true);
             }}
           >
             <i className="fa-solid fa-plus"></i>
