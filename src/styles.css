@@ -215,4 +215,13 @@ body {
   .confirm-email-container {
     width: 90%;
   }
+  .dashboard {
+    display: block;
+  }
+}
+
+.file {
+  background-image: url("./assets/login-page-icons/file-svgrepo-com.svg");
+  padding-top: 1rem;
+  padding-left: 55px;
 }

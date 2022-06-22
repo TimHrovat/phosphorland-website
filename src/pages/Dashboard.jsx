@@ -3,11 +3,17 @@ import DashboardNavbar from "../components/dashboard-navbar/DashboardNavbar";
 import DashboardContent from "../components/dashboard-content/DashboardContent";
 
 export default function Dashboard() {
+  const [trapState, setTrapState] = React.useState();
+
+  function handleTrapChange(trap) {
+    setTrapState(trap);
+  }
+
   return (
     <>
       <div className="dashboard">
-        <DashboardNavbar />
-        <DashboardContent />
+        <DashboardNavbar setTrapState={handleTrapChange} />
+        <DashboardContent trapID={trapState} />
       </div>
     </>
   );

@@ -39,13 +39,6 @@ class Footer extends Component {
           >
             @TimHrovat
           </a>
-          &nbsp; & &nbsp;
-          <a
-            className="phosphor-green"
-            href="https://www.linkedin.com/in/mark-ilovar-771566220/"
-          >
-            @MarkIlovar
-          </a>
         </div>
       </footer>
     );

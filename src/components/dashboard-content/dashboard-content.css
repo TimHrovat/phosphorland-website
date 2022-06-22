@@ -6,6 +6,8 @@ main {
   width: 85%;
   min-height: 100vh;
   background-color: var(--dashboard-content-bg);
+  color: var(--arctic-white);
+  position: relative;
 }
 
 @media screen and (max-width: 1200px) {
@@ -22,6 +24,194 @@ main {
 
 @media screen and (max-width: 768px) {
   main {
-    width: 100vw;
+    width: 100%;
+  }
+  .calendar-section {
+    width: 80%;
+  }
+}
+
+.navigation-btn {
+  padding: 5px 30px 5px 30px;
+  background-color: var(--phosphor-green);
+  border: none;
+  border-radius: 20px;
+  color: var(--arctic-white);
+  font-size: 1rem;
+}
+
+.back {
+  position: fixed;
+  bottom: 36px;
+  right: 150px;
+  border-radius: 100%;
+  width: none;
+  padding: 4px 13px 4px 13px;
+}
+
+.add-image {
+  position: fixed;
+  bottom: 36px;
+  right: 95px;
+  border-radius: 100%;
+  width: none;
+  padding: 4px 10px 4px 10px;
+}
+
+.navigation-btn:hover {
+  cursor: pointer;
+  filter: brightness(1.25);
+}
+
+.calendar-section {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 500px;
+}
+
+.calendar-container {
+  left: 75px;
+  position: relative;
+}
+
+.calendar-section h1 {
+  margin-bottom: 30px;
+}
+
+.calendar-section button {
+  margin-top: 30px;
+}
+
+.images-section div {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  text-align: center;
+}
+.images-section {
+  padding: 50px;
+}
+
+.image {
+  display: inline-block;
+}
+
+.image img {
+  max-width: 80%;
+  max-height: 300px;
+  transition: all 0.3s ease;
+}
+
+.image img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.image a {
+  cursor: default;
+}
+
+.upload-section {
+  background-color: var(--grey-text);
+  max-width: 80%;
+  position: fixed;
+  z-index: 1;
+  bottom: 90px;
+  right: 40px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+#file-input {
+  background-color: var(--arctic-white);
+  color: var(--grey-text);
+}
+
+#file-submit {
+  background-color: var(--phosphor-green);
+  margin-bottom: 0px;
+}
+
+#file-submit:hover {
+  filter: brightness(1.25);
+  cursor: pointer;
+}
+
+.close-upload {
+  float: right;
+  padding: 0px 10px 10px 10px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.close-upload:hover {
+  filter: brightness(1.25);
+}
+
+.error {
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .calendar-section {
+    width: 80%;
+  }
+  .calendar-container {
+    width: 100%;
+    left: 0;
+  }
+  .react-calendar {
+    margin: auto;
+  }
+  .images-section {
+    padding-top: 80px;
+  }
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid var(--phosphor-green);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: var(--phosphor-green) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

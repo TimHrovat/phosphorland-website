@@ -105,7 +105,7 @@
   "login": {
     "title": "Conecte-se",
     "form": {
-      "usrnm": "Nome de usuário",
+      "usrnm": "Email",
       "pswd": "Senha"
     },
     "button": "Entrar",
@@ -119,7 +119,7 @@
     }
   },
   "register": {
-    "title": "Inscrever-se",
+    "title": "Email",
     "form": {
       "usrnm": "Nome de usuário",
       "pswd": "Senha",
@@ -142,10 +142,37 @@
   },
   "dashboard": {
     "navbar": {
+      "add-trap": "Adicionar armadilha",
       "button": {
         "home": "Início",
         "logout": "Sair"
       }
+    },
+    "content": {
+      "calendar": {
+        "title": "Selecione a data para visualizar as imagens:",
+        "tooltip": "Data selecionada: ",
+        "button": "Selecionar",
+        "error": {
+          "select-trap": "Selecione uma armadilha para continuar"
+        }
+      }
+    }
+  },
+  "add-trap": {
+    "title": "Adicionar armadilha",
+    "form": { "name": "Nome", "id": "Id" },
+    "submit": "Enviar",
+    "error": {
+      "exists": "Já existe uma armadilha com o mesmo ID",
+      "basic": "Falha ao adicionar armadilha"
+    }
+  },
+  "add-image": {
+    "title": "Enviar Imagem",
+    "button": "Enviar",
+    "error": {
+      "basic": "Falha no upload da imagem"
     }
   },
   "verification": {

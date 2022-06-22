@@ -105,7 +105,7 @@
   "login": {
     "title": "Log in",
     "form": {
-      "usrnm": "Username",
+      "usrnm": "Email",
       "pswd": "Password"
     },
     "button": "Enter",
@@ -121,7 +121,7 @@
   "register": {
     "title": "Sign up",
     "form": {
-      "usrnm": "Username",
+      "usrnm": "Email",
       "pswd": "Password",
       "confirm-pswd": "Confirm password"
     },
@@ -136,16 +136,46 @@
       "failed": "Failed to sign up"
     }
   },
-  "error": {
+  "errorpage": {
     "title": "Error 404: Page not found",
     "button": "Return home"
   },
   "dashboard": {
     "navbar": {
+      "add-trap": "Add trap",
       "button": {
         "home": "Home",
         "logout": "Sign out"
       }
+    },
+    "content": {
+      "calendar": {
+        "title": "Select the date to view the images:",
+        "tooltip": "Selected date: ",
+        "button": "Select",
+        "error": {
+          "select-trap": "Select a trap to continue"
+        }
+      }
+    }
+  },
+  "add-trap": {
+    "title": "Add trap",
+    "form": {
+      "name": "Name",
+      "id": "Id"
+    },
+    "submit": "Submit",
+    "error": {
+      "exists": "Trap with this ID already exists in the database",
+      "basic": "Trap add failed"
+    }
+  },
+  "add-image": {
+    "title": "Upload Image",
+    "button": "Submit",
+    "error": {
+      "basic": "Image upload failed"
     }
   },
   "verification": {

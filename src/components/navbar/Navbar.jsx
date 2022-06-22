@@ -14,7 +14,7 @@ class Navbar extends Component {
   render() {
     const { t } = this.props;
     window.addEventListener("scroll", (event) => {
-      if (window.scrollY >= 300) {
+      if (window.scrollY >= 100) {
         this.setState({ scrolled: true });
       } else {
         this.setState({ scrolled: false });
