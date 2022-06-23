@@ -31,7 +31,7 @@ function Contact() {
     //   })
     //   .catch((err) => console.log(err));
 
-    fetch("http://norbert.node.aerio.cloud:8598/post", {
+    fetch("https://pb.timhrovat.com/post", {
       method: "POST",
       mode: "cors",
       headers: { "Content-Type": "application/json" },
