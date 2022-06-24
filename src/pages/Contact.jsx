@@ -3,6 +3,7 @@ import "./styles/contact.css";
 import { useTranslation } from "react-i18next";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
   // eslint-disable-next-line
@@ -10,6 +11,7 @@ function Contact() {
   const fname = useRef();
   const email = useRef();
   const text = useRef();
+  const navigate = useNavigate();
 
   function handleSubmit(e) {
     const data = {
@@ -39,8 +41,7 @@ function Contact() {
     })
       .then((response) => {
         console.log(response);
-        window.location.reload();
-        return false;
+        navigate.go(0);
       })
       .catch((err) => console.log(err));
   }
