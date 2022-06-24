@@ -69,7 +69,7 @@ function AddTrap() {
               id="name"
               name="name"
               placeholder={t("add-trap.form.name")}
-              className="login-input usrnm"
+              className="login-input trap-name"
               ref={nameRef}
             ></input>
             <input
@@ -77,7 +77,7 @@ function AddTrap() {
               id="id"
               name="id"
               placeholder={t("add-trap.form.id")}
-              className="login-input pswd"
+              className="login-input trap-id"
               ref={idRef}
             ></input>
             <span className="error">{t(error)}</span>

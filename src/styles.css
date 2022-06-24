@@ -74,6 +74,14 @@ body {
   background-image: url("./assets/login-page-icons/lock-svgrepo-com.svg");
 }
 
+.trap-name {
+  background-image: url("./assets/login-page-icons/tag-svgrepo-com.svg");
+}
+
+.trap-id {
+  background-image: url("./assets/login-page-icons/key-svgrepo-com.svg");
+}
+
 .login-submit {
   width: 100%;
   border: none;
