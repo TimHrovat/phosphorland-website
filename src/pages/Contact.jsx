@@ -39,7 +39,8 @@ function Contact() {
     })
       .then((response) => {
         console.log(response);
-        window.location.reload(false);
+        window.location.reload();
+        return false;
       })
       .catch((err) => console.log(err));
   }
