@@ -1,9 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./styles/contact.css";
 import { useTranslation } from "react-i18next";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-import { useNavigate } from "react-router-dom";
 
 function Contact() {
   // eslint-disable-next-line
@@ -11,7 +10,7 @@ function Contact() {
   const fname = useRef();
   const email = useRef();
   const text = useRef();
-  const navigate = useNavigate();
+  const [message, setMessage] = useState();
 
   function handleSubmit(e) {
     const data = {
@@ -21,6 +20,7 @@ function Contact() {
     };
     console.log(JSON.stringify(data));
 
+    //localhost
     // fetch("http://127.0.0.1:8080/post", {
     //   method: "POST",
     //   mode: "cors",
@@ -41,7 +41,10 @@ function Contact() {
     })
       .then((response) => {
         console.log(response);
-        navigate.go(0);
+        setMessage("Message sent successfully");
+        fname.current.value = "";
+        email.current.value = "";
+        text.current.value = "";
       })
       .catch((err) => console.log(err));
   }
@@ -104,6 +107,7 @@ function Contact() {
                   ></textarea>
                 </div>
               </form>
+              <p className="contact-message">{message}</p>
               <button
                 type="submit"
                 className="submit-contact"

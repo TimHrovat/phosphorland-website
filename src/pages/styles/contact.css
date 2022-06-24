@@ -148,3 +148,7 @@ iframe {
   height: 350px;
   border: none;
 }
+
+.contact-message {
+  color: var(--phosphor-green);
+}
