@@ -53,69 +53,67 @@ function Contact() {
     <>
       <Navbar />
       <div className="title-slide-mobile-expand">
-        <div className="sections-contact">
-          <ul className="contact-info">
-            <li className="info-card">
-              <i className="fa-solid fa-location-dot"></i>
-              <div className>
-                <h1>{t("contact.section.1.title")}</h1>
-                <p>{t("contact.section.1.description.1")}</p>
-                <p>{t("contact.section.1.description.2")}</p>
-                <p>{t("contact.section.1.description.3")}</p>
-              </div>
-            </li>
-            <li className="info-card">
-              <i className="fa-solid fa-phone"></i>
-              <div>
-                <h1>{t("contact.section.2.title")}</h1>
-                <p>{t("contact.section.2.description")}</p>
-              </div>
-            </li>
-            <li className="info-card">
-              <i className="fa-solid fa-envelope"></i>
-              <div>
-                <h1>{t("contact.section.3.title")}</h1>
-                <p>{t("contact.section.3.description")}</p>
-              </div>
-            </li>
-          </ul>
-          <div className="contact-form">
-            <div>
-              <h1>{t("contact.section.4.title")}</h1>
-              <form id="contact">
-                <div>
-                  <input
-                    type="text"
-                    id="fname"
-                    name="fname"
-                    ref={fname}
-                    placeholder={t("contact.section.4.description.1")}
-                  ></input>
-                  <input
-                    type="text"
-                    id="email"
-                    name="email"
-                    ref={email}
-                    placeholder={t("contact.section.4.description.2")}
-                  ></input>
-                  <textarea
-                    id="message"
-                    form="contact"
-                    name="message"
-                    ref={text}
-                    placeholder={t("contact.section.4.description.3")}
-                  ></textarea>
-                </div>
-              </form>
-              <p className="contact-message">{message}</p>
-              <button
-                type="submit"
-                className="submit-contact"
-                onClick={handleSubmit}
-              >
-                {t("contact.button")}
-              </button>
+        <ul className="contact-info">
+          <li className="info-card">
+            <i className="fa-solid fa-location-dot"></i>
+            <div className>
+              <h1>{t("contact.section.1.title")}</h1>
+              <p>{t("contact.section.1.description.1")}</p>
+              <p>{t("contact.section.1.description.2")}</p>
+              <p>{t("contact.section.1.description.3")}</p>
             </div>
+          </li>
+          <li className="info-card">
+            <i className="fa-solid fa-phone"></i>
+            <div>
+              <h1>{t("contact.section.2.title")}</h1>
+              <p>{t("contact.section.2.description")}</p>
+            </div>
+          </li>
+          <li className="info-card">
+            <i className="fa-solid fa-envelope"></i>
+            <div>
+              <h1>{t("contact.section.3.title")}</h1>
+              <p>{t("contact.section.3.description")}</p>
+            </div>
+          </li>
+        </ul>
+        <div className="contact-form">
+          <div>
+            <h1>{t("contact.section.4.title")}</h1>
+            <form id="contact">
+              <div>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  ref={fname}
+                  placeholder={t("contact.section.4.description.1")}
+                ></input>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  ref={email}
+                  placeholder={t("contact.section.4.description.2")}
+                ></input>
+                <textarea
+                  id="message"
+                  form="contact"
+                  name="message"
+                  ref={text}
+                  placeholder={t("contact.section.4.description.3")}
+                ></textarea>
+              </div>
+            </form>
+            <p className="contact-message">{message}</p>
+            <button
+              type="submit"
+              className="submit-contact"
+              onClick={handleSubmit}
+            >
+              {t("contact.button")}
+            </button>
           </div>
         </div>
       </div>
