@@ -16,13 +16,16 @@
 }
 
 body {
-  background: url("./assets/home-page-images/homepage.png") center top fixed
-    no-repeat;
+  background: url("./assets/home-page-images/homepage.png");
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .title-slide {
   width: 100%;
-  min-height: 92vh;
+  min-height: 100vh;
   color: var(--arctic-white);
   position: relative;
 }

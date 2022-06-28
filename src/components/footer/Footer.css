@@ -1,7 +1,7 @@
 footer {
   background-color: black;
-  min-height: 20vh;
   color: var(--arctic-white);
+  padding: 30px 0 30px 0;
 }
 
 .social-icon {

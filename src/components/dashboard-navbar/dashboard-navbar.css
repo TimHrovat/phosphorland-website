@@ -93,8 +93,8 @@ aside div div i {
     position: fixed;
     overflow: hidden;
     width: 100%;
-    top: 8vh;
-    min-height: 92vh;
+    min-height: 100vh;
+    padding-top: 8vh;
     transform: translateX(-100%);
     display: none;
   }
@@ -137,7 +137,8 @@ aside div div i {
   right: 10%;
 }
 
-.dashboard-nav i:hover {
+.dashboard-nav i:hover,
+.dashboard-nav h1:hover {
   filter: brightness(1.25);
 }
 

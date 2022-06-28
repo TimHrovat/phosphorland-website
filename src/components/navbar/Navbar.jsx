@@ -23,8 +23,8 @@ class Navbar extends Component {
 
     return (
       <div>
-        <div className={this.state.scrolled ? "nav" : ""}></div>
-        <nav className="NavbarItems">
+        <div className={this.state.scrolled ? "nav-scrolled" : ""}></div>
+        <nav className="navbar-items">
           <h1 className="navbar-logo">
             <Link to="/">{t("navbar.title")}</Link>
           </h1>
