@@ -17,7 +17,7 @@ function Contact() {
     const data = {
       fullname: fname.current.value,
       email: email.current.value,
-      text: text.current.value,
+      text: "\n" + text.current.value,
     };
     console.log(JSON.stringify(data));
 
