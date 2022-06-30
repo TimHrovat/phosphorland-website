@@ -6,7 +6,7 @@ This project was created during my internship at Phosphorland, Portugal.
 
 The application presents and gives functionality to the company's product called Smart Traps.
 
-It's accessible via this link: www.traps.timhrovat.com
+It's accessible via this link: https://traps.timhrovat.com/
 
 What I learned:
 
