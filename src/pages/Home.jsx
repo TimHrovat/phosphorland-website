@@ -24,7 +24,7 @@ function Home() {
         </div>
       </div>
       <div className="content">
-        <div className="HomeCard">
+        <div className="home-card">
           <h1 className="card-title">{t("home.content.main.title")}</h1>
           <p className="description">
             {t("home.content.main.description-first")}
@@ -67,7 +67,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="HomeCard">
+        <div className="home-card">
           <h1 className="features-title">{t("home.content.cards.title")}</h1>
           <ul className="small-cards-list">
             {SmallCardsList.map((card, index) => {

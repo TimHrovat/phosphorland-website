@@ -1,11 +1,18 @@
-.HomeCard {
+.home-card {
   color: var(--grey-text);
   background: var(--arctic-white);
   padding-top: 50px;
-  padding-left: 10%;
-  padding-right: 10%;
   text-align: justify;
   padding-bottom: 50px;
+  max-width: 1800px;
+  margin: auto;
+}
+
+@media screen and (max-width: 2000px) {
+  .home-card {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 .sections {

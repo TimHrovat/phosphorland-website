@@ -1,14 +1,13 @@
-.NavbarItems {
+.navbar-items {
   height: 8vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   min-height: 50px;
-  max-height: 70px;
 }
 
-.nav {
+.nav-scrolled {
   position: fixed;
   background-color: black;
   opacity: 0.7;

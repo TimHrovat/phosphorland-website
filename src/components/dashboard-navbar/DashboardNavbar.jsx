@@ -64,7 +64,7 @@ export default function DashboardNavbar(props) {
   return (
     <>
       <nav className="dashboard-nav" id="dashboard-nav">
-        <h1>Smart Traps</h1>
+        <h1 onClick={() => navigate("/")}>Smart Traps</h1>
         <div style={{ float: "right" }}>
           <i
             onClick={handleClick}
