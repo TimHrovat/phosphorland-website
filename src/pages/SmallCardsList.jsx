@@ -6,6 +6,7 @@ import meterology from "../assets/small-card-icons/meterology.png";
 import photographs from "../assets/small-card-icons/photographs.png";
 import trap from "../assets/small-card-icons/trap.png";
 
+// these cards are shown on the homepage
 export const SmallCardsList = [
   {
     icon: trap,

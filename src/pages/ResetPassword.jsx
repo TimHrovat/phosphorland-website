@@ -16,6 +16,7 @@ export default function ResetPassword() {
   //eslint-disable-next-line
   const [t, i18n] = useTranslation("common");
 
+  // this function sends a reset password email
   async function handleSubmit(e) {
     e.preventDefault();
 
