@@ -35,7 +35,7 @@ class Footer extends Component {
           {t("footer.subtitle.paragraph")}
           <a
             className="phosphor-green"
-            href="https://www.linkedin.com/in/tim-hrovat-4255b61a6/"
+            href="https://traps.timhrovat.com/"
             target="_blank"
             rel="noreferrer"
           >
