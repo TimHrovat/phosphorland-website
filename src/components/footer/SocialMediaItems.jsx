@@ -4,6 +4,7 @@ import twitter_logo from "../../assets/logos/twitter_logo.png";
 import linkedin_logo from "../../assets/logos/linkedin_logo.png";
 import youtube_logo from "../../assets/logos/youtube_logo.png";
 
+// list of logos that are shown on the footer
 export const SocialMediaItems = [
   {
     title: "facebook",

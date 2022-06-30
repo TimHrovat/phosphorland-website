@@ -15,7 +15,7 @@ class Footer extends Component {
           {SocialMediaItems.map((item, index) => {
             return (
               <li key={index}>
-                <a href={item.url}>
+                <a href={item.url} target="_blank" rel="noreferrer">
                   <img
                     className="social-icon"
                     src={item.icon}
@@ -36,6 +36,8 @@ class Footer extends Component {
           <a
             className="phosphor-green"
             href="https://www.linkedin.com/in/tim-hrovat-4255b61a6/"
+            target="_blank"
+            rel="noreferrer"
           >
             @TimHrovat
           </a>
