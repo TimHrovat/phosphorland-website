@@ -15,6 +15,7 @@ function Login() {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
+  // if the user exists it logs him in
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -70,6 +71,9 @@ function Login() {
           <p>
             {t("login.user-without-acc.paragraph") + " "}
             <Link to="/register">{t("login.user-without-acc.link")}</Link>
+          </p>
+          <p className="reset-password" onClick={() => navigate("/resetpswd")}>
+            {t("login.resetpswd")}
           </p>
         </div>
       </div>

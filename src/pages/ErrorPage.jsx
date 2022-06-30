@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 
+// page that shows up if you enter a non-existent url
 function ErrorPage() {
   // eslint-disable-next-line
   const [t, i18n] = useTranslation("common");

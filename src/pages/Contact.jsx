@@ -12,6 +12,7 @@ function Contact() {
   const text = useRef();
   const [message, setMessage] = useState();
 
+  // sends email when user submits the form
   function handleSubmit(e) {
     const data = {
       fullname: fname.current.value,
@@ -20,7 +21,7 @@ function Contact() {
     };
     console.log(JSON.stringify(data));
 
-    //localhost
+    // if backend runs on localhost use this code
     // fetch("http://127.0.0.1:8080/post", {
     //   method: "POST",
     //   mode: "cors",
@@ -33,6 +34,7 @@ function Contact() {
     //   })
     //   .catch((err) => console.log(err));
 
+    // sends a post request to the NodeJS backend which sends an email using nodemailer
     fetch("https://pb.timhrovat.com/post", {
       method: "POST",
       mode: "cors",
@@ -42,6 +44,8 @@ function Contact() {
       .then((response) => {
         console.log(response);
         setMessage("Message sent successfully");
+        // clears the form --
+        // shorter with window.location.reload() but netlify gave me an error everytime the page gets reloaded
         fname.current.value = "";
         email.current.value = "";
         text.current.value = "";

@@ -26,7 +26,7 @@
         "description-first": "Insects, disease and weather challenges can cost a lot of work and revenue. With Phosphorland traps, you can protect your crops and investments.",
         "description-second": "Our Smart Traps are an automated system for monitoring insects, attracted to them. It works in all areas covered by GPRS, 3G or LTE network. The system consists of fully integrated, automated and easy-to-use tools.",
         "list": {
-          "title": "Benefits for profucers",
+          "title": "Benefits for producers",
           "item": {
             "1": "Greater monitoring accuracy at a lower cost",
             "2": "Fewer field visits and more efficient pest control",
@@ -113,8 +113,9 @@
       "paragraph": "Don't have an account?",
       "link": "Register"
     },
+    "resetpswd": "Reset password",
     "error": {
-      "wrong-usnm-pswd": "Incorrect username or password",
+      "wrong-usrnm-pswd": "Incorrect username or password",
       "non-verified": "Email has not been verified yet"
     }
   },
@@ -192,5 +193,17 @@
     },
     "info": "Email sent successfully",
     "err": "Cannot send email so soon after the other one"
+  },
+  "resetpswd": {
+    "title": "Reset Password",
+    "form": {
+      "email": "Email"
+    },
+    "error": {
+      "success": "Email sent successfully",
+      "basic": "Something went wrong, please try again",
+      "invalid": "Invalid email"
+    },
+    "button": "Submit"
   }
 }

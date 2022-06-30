@@ -12,6 +12,7 @@ export default function ConfirmEmail() {
   // eslint-disable-next-line
   const [t, i18n] = useTranslation("common");
 
+  // sends another verification email
   async function handleConfirmEmail(e) {
     e.preventDefault();
 

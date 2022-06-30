@@ -38,6 +38,7 @@ export default function DashboardNavbar(props) {
     setBurgerClicked(!burgerClicked);
   }
 
+  // loads the traps that belong to the user that is currently logged in
   useEffect(() => {
     // eslint-disable-next-line
     const dbRefTrap = ref(db, "users/" + uid + "/traps");
@@ -50,6 +51,7 @@ export default function DashboardNavbar(props) {
     return () => {};
   }, [db, uid]);
 
+  // when the trap is selected it changes it's style
   function setTrap(key, index) {
     props.setTrapState(key);
     const item = document.getElementById("trap" + index);

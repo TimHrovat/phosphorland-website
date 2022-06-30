@@ -18,9 +18,11 @@ function Register() {
   async function handleSubmit(e) {
     e.preventDefault();
 
+    // checks if password and password confirmation are the same
     if (passwordRef.current.value !== confirmPasswordRef.current.value) {
       return setError("register.error.password-match");
     }
+    // checks if the password is the appropriate length
     if (passwordRef.current.value.length < 6) {
       return setError("register.error.password-length");
     }

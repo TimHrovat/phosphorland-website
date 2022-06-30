@@ -1,3 +1,5 @@
+// list of links that are present in the navbar
+
 export const MenuItems = [
   {
     title: "navbar.menu.home",

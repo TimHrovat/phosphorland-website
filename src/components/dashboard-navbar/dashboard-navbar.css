@@ -170,5 +170,6 @@ aside div div i {
 }
 
 .trap-active {
-  color: var(--phosphor-green);
+  /* color: var(--phosphor-green); */
+  color: rgb(0, 213, 255);
 }

@@ -113,15 +113,16 @@
       "paragraph": "Não tem uma conta?",
       "link": "Registro"
     },
+    "resetpswd": "Redefinir senha",
     "error": {
-      "wrong-usnm-pswd": "Nome de usuário ou senha incorretos",
+      "wrong-usrnm-pswd": "Nome de usuário ou senha incorretos",
       "non-verified": "O e-mail ainda não foi verificado"
     }
   },
   "register": {
-    "title": "Email",
+    "title": "inscrever-se",
     "form": {
-      "usrnm": "Nome de usuário",
+      "usrnm": "Email",
       "pswd": "Senha",
       "confirm-pswd": "Confirme a Senha"
     },
@@ -189,5 +190,17 @@
     },
     "info": "Email enviado com sucesso",
     "err": "Não é possível enviar e-mail tão logo após o outro"
+  },
+  "resetpswd": {
+    "title": "Redefinir Senha",
+    "form": {
+      "email": "Email"
+    },
+    "error": {
+      "success": "E-mail enviado com sucesso",
+      "basic": "Alguma coisa deu errado. Por favor tente outra vez",
+      "invalid": "E-mail inválido"
+    },
+    "button": "Enviar"
   }
 }

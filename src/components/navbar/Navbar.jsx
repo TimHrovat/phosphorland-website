@@ -5,14 +5,17 @@ import { Link } from "react-router-dom";
 import { withTranslation } from "react-i18next";
 
 class Navbar extends Component {
-  state = { active: false, scrolled: false, skipIndex: 3 };
+  state = { burgerActive: false, scrolled: false };
 
+  // when burger is clicked the menu presents itself
   handleClick = () => {
-    this.setState({ active: !this.state.active });
+    this.setState({ burgerActive: !this.state.burgerActive });
   };
 
   render() {
     const { t } = this.props;
+
+    //navbar background becomes darker on scroll for visibility purposes
     window.addEventListener("scroll", (event) => {
       if (window.scrollY >= 100) {
         this.setState({ scrolled: true });
@@ -30,11 +33,15 @@ class Navbar extends Component {
           </h1>
           <div className="menu-icon" onClick={this.handleClick}>
             <i
-              className={this.state.active ? "fas fa-times" : "fas fa-bars "}
+              className={
+                this.state.burgerActive ? "fas fa-times" : "fas fa-bars "
+              }
             ></i>
           </div>
 
-          <ul className={this.state.active ? "nav-menu active" : "nav-menu"}>
+          <ul
+            className={this.state.burgerActive ? "nav-menu active" : "nav-menu"}
+          >
             {MenuItems.map((item, index) => {
               return (
                 <li key={index}>

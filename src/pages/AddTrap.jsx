@@ -30,6 +30,7 @@ function AddTrap() {
 
       const refer = ref(database, "users/" + uid + "/traps");
       let proceed = true;
+      // checks if the trap with the same id already exists in the database
       onValue(refer, (snapshot) => {
         snapshot.forEach((child) => {
           if (child.key === idRef.current.value) {
@@ -52,6 +53,7 @@ function AddTrap() {
   // eslint-disable-next-line
   const [t, i18n] = useTranslation("common");
 
+  // navigates to login if user is not authenticated
   useEffect(() => {
     if (currentUser === null) {
       navigate("/login");
