@@ -22,7 +22,7 @@ function Login() {
     try {
       setError("");
       setLoading(true);
-      await login(emailRef.current.value, passwordRef.current.value);
+      await login(emailRef.current.value.trim(), passwordRef.current.value);
       if (firebase.auth().currentUser.emailVerified) {
         navigate("/dashboard");
       } else {
